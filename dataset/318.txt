@@ -1,0 +1,17 @@
+topology:
+    link(A, B)
+    link(C, D)
+    link(B, C, E)
+    link(A, D, E)
+
+preconditions:
+    (line_CD, 20, =)
+    (line_AB, 30, =)
+    (line_CE, 20, =)
+    (angle_DCE, 90, =)
+    (ABE, Right_Triangle, is)
+    (AB, DC, parallel)
+
+question:
+    triangle_CDE
+    

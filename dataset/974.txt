@@ -1,0 +1,21 @@
+topology:
+    link(A, B)
+    link(B, C)
+    link(A, C)
+    link(P, A)
+    link(P, B)
+    link(P, C)
+
+preconditions:
+    (line_PA, 2, =)
+    (line_PC, 1, =)
+    (angle_ACB, 90, =)
+    (angle_APC, 135, =)
+    (line_AC, line_BC, =)
+    ([A, P, B], C, common_vertex)
+    ([B, P, C], A, common_vertex)
+    ([A, P, C], B, common_vertex)
+
+question:
+    line_BP
+    

@@ -1,0 +1,20 @@
+topology:
+    link(A, M, B)
+    link(A, N, C)
+    link(B, C)
+    link(B, O)
+    link(C, O)
+    link(M, O, N)
+
+preconditions:
+    (line_AB, 12, =)
+    (line_AC, 18, =)
+    (line_BC, 24, =)
+    (line_BO, angle_ABC, split=0.5)
+    (line_CO, angle_ACB, split=0.5)
+    (MN, BC, parallel)
+    ([A, O, C], B, common_vertex)
+    ([A, O, B], C, common_vertex)
+    
+question:
+    circumference_AMN

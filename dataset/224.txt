@@ -1,0 +1,23 @@
+topology:
+    link(A, B)
+    link(A, D)
+    link(C, D)
+    link(B, C)
+    link(B, O, P, D)
+    link(A, P, C)
+    link(A, O)
+
+preconditions:
+    (ABC, Equilateral_Triangle, is)
+    (line_OD, 1, =)
+    (line_OA, 1, =)
+    (angle_AOB, 120, =)
+    ([B, O, C, D], A, common_vertex)
+    ([A, D, C], B, common_vertex)
+    ([D, A, B], C, common_vertex)
+    ([A, B, C], D, common_vertex)
+    (angle_ADC, 120, =)
+
+question:
+    angle_BDC
+    

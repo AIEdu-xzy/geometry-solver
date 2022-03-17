@@ -1,0 +1,13 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, C)
+
+preconditions:
+    (line_AB, 6, =)
+    (line_AC, 6, =)
+    (BAC, Right_Triangle, is)
+
+question:
+    circumference_ABC
+    

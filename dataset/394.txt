@@ -1,0 +1,16 @@
+topology:
+    link(A, B)
+    link(A, F)
+    link(A, D)
+    link(A, C)
+    link(B, F, D, C)
+
+preconditions:
+    (angle_ABC, 36, =)
+    (angle_ACB, 76, =)
+    (line_AF, angle_BAC, split=0.5)
+    ([B, F, D, C], A, common_vertex)
+    (AD, BC, perpendicular)
+
+question:
+    angle_DAF

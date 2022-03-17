@@ -1,0 +1,16 @@
+topology:
+    link(A, E, B)
+    link(A, F, C)
+    link(B, D, C)
+    link(D, E)
+    link(D, F)
+
+preconditions:
+    (DE, AB, perpendicular)
+    (FD, BC, perpendicular)
+    (angle_AFD, 158, =)
+    ([B, E, F], D, common_vertex)
+    (angle_ABC, angle_ACB, =)
+
+question:
+    angle_EDF

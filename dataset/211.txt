@@ -1,0 +1,17 @@
+topology:
+    link(A, B)
+    link(B, F, C)
+    link(A, E, C)
+    link(B, E)
+    link(E, F)
+
+preconditions:
+    (line_AC, 7, =)
+    (line_AB, 6, =)
+    (line_BC, 8, =)
+    (point_F, line_BC, split=1/3)
+    (point_E, line_AC, split=1/3)
+
+question:
+    triangle_BFE
+    

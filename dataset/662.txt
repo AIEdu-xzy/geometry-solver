@@ -1,0 +1,19 @@
+topology:
+    link(A, C)
+    link(A, E, P)
+    link(A, F, G, D)
+    link(B, F, E, C)
+    link(B, G, P)
+    link(B, D)
+
+preconditions:
+    (angle_ACB, 32, =)
+    (angle_ADB, 28, =)
+    (angle_CBD, 60, =)
+    (angle_CAP, angle_DAP, =)
+    (angle_CBP, angle_DBP, =)
+    ([C, P, D], B, common_vertex)
+    ([C, P, D], A, common_vertex)
+
+question:
+    angle_APB

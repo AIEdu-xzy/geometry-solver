@@ -1,0 +1,15 @@
+topology:
+    link(A, B)
+    link(A, N, C)
+    link(B, M, C)
+    link(M, N)
+
+preconditions:
+    (line_AB, 5, =)
+    (line_AC, 5, =)
+    (line_BC, 6, =)
+    (MN, AC, perpendicular)
+    (point_M, line_BC, split=0.5)
+
+target: 
+    line_MN

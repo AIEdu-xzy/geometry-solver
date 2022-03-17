@@ -1,0 +1,13 @@
+topology:
+    link(A, D, B)
+    link(B, E, C)
+    link(A, C)
+    link(D, E)
+
+preconditions:
+    (ABC, Right_Triangle, is)
+    (angle_CED, 165, =)
+
+question:
+    angle_ADE
+    

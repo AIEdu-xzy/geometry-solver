@@ -1,0 +1,14 @@
+topology:
+    link(A, F, B)
+    link(A, E)
+    link(C, F, E)
+    link(C, D)
+
+preconditions:
+    (angle_EAB, 20, =)
+    (angle_AEC, 35, =)
+    (AB, CD, parallel)
+
+question:
+    angle_ECD
+    

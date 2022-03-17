@@ -1,0 +1,16 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, D, C)
+    link(A, D)
+
+preconditions:
+    (angle_ABD, 50, =)
+    (point_D, line_BC, split=0.5)
+    (line_AB, 1, =)
+    (line_AC, 1, =)
+    ([B, D, C], A, common_vertex)
+
+question:
+    angle_BAD
+    

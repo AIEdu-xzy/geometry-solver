@@ -1,0 +1,18 @@
+topology:
+    link(A, E, B)
+    link(A, C)
+    link(B, D, F, C)
+    link(E, F)
+    link(A, F)
+    link(E, D)
+
+preconditions:
+    (angle_ACB, 90, =)
+    (angle_ABC, 30, =)
+    (line_BC, 3, =)
+    (DE, BC, perpendicular)
+    (AEF, Right_Triangle, is)
+
+question:
+    line_AC
+    

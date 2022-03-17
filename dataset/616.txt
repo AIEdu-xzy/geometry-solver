@@ -1,0 +1,19 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, D, C)
+    link(A, E, D)
+    link(B, E)
+    link(C, E)
+
+preconditions:
+    (AD, BC, perpendicular)
+    (angle_EBC, 45, =)
+    (ABC, Equilateral_Triangle, is)
+    ([B, D, C], A, common_vertex)
+    ([A, E, C], B, common_vertex)
+    ([A, E, B], C, common_vertex)
+
+question:
+    angle_BED
+    

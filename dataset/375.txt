@@ -1,0 +1,17 @@
+topology:
+    link(A, B)
+    link(A, O, C)
+    link(D, O, B)
+    link(D, C)
+    link(B, C)
+
+preconditions:
+    (angle_BAC, 72, =)
+    (angle_BDC, 72, =)
+    (angle_ACB, 36, =)
+    (angle_DBC, 36, =)
+    (line_BC, 1, =)
+
+question:
+    line_BD
+    

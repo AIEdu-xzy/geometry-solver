@@ -1,0 +1,20 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, D, E, C)
+    link(A, F, D)
+    link(B, F)
+    link(A, E)
+
+preconditions:
+    ([B, D, E, C], A, common_vertex)
+    ([A, F, C], B, common_vertex)
+    (AD, BC, perpendicular)
+    (angle_AED, 62, =)
+    (angle_BAC, 90, =)
+    (angle_ACB, 45, =)
+    (line_AF, 1, =)
+    (line_EC, 1, =)
+
+question:
+    angle_DBF

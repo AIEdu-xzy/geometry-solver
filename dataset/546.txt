@@ -1,0 +1,24 @@
+topology:
+    link(A, B, E)
+    link(A, C, F)
+    link(B, C)
+    link(B, D)
+    link(C, D)
+    link(B, P)
+    link(C, P)
+
+preconditions:
+    (angle_BAC, 30, =)
+    (angle_ABC, 80, =)
+    (line_BD, angle_ABC, split=0.5)
+    (line_CD, angle_ACB, split=0.5)
+    (line_BP, angle_CBE, split=0.5)
+    (line_CP, angle_BCF, split=0.5)
+    ([A, D, C], B, common_vertex)
+    ([C, P, E], B, common_vertex)
+    ([A, D, B], C, common_vertex)
+    ([B, P, F], C, common_vertex)
+
+question:
+    angle_BPC
+    

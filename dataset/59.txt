@@ -1,0 +1,17 @@
+topology:
+    link(A, M, P, B)
+    link(A, Q, C)
+    link(B, C)
+    link(M, Q)
+    link(P, Q)
+
+preconditions:
+    (line_AM, 1, =)
+    (line_MQ, 1, =)
+    (line_QP, 1, =)
+    (angle_ACB, 74, =)
+    (ABC, Right_Triangle, is)
+
+question:
+    angle_QPB
+    

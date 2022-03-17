@@ -1,0 +1,12 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, C)
+
+preconditions:
+    (ABC, Equilateral_Triangle, is)
+    (line_AB, 4, =)
+
+question:
+    triangle_ABC
+    

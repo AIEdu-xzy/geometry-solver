@@ -1,0 +1,17 @@
+topology:
+    link(O, A)
+    link(O, D)
+    link(O, B)
+    link(O, C)
+    link(A, B)
+    link(D, C)
+
+preconditions:
+    (angle_AOB, 90, =)
+    (angle_DOC, 90, =)
+    (angle_BOD, 60, =)
+    ([A, D, B, C], O, common_vertex)
+
+question:
+    angle_AOC
+    

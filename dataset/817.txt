@@ -1,0 +1,16 @@
+topology:
+    link(A, F, H, C)
+    link(C, J, I, E)
+    link(E, G, F, B)
+    link(B, H, J, D)
+    link(D, I, G, A)
+
+preconditions:
+    (angle_CAD, 10, =)
+    (angle_EBD, 20, =)
+    (angle_ACE, 30, =)
+    (angle_ADB, 40, =)
+
+question:
+    angle_BEC
+    

@@ -1,0 +1,16 @@
+topology:
+    link(A, B)
+    link(A, E, C)
+    link(A, D)
+    link(B, D, C)
+    link(D, E)
+
+preconditions:
+    (ABC, Equilateral_Triangle, is)
+    (line_AD, line_AE, =)
+    (point_D, line_BC, split=0.5)
+    (line_AB, 1, =)
+
+question:
+    angle_EDC
+    

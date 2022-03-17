@@ -1,0 +1,16 @@
+topology:
+    link(A, G, E)
+    link(A, D, C)
+    link(B, G, D)
+    link(B, E, C)
+
+preconditions:
+    (AC, CB, perpendicular)
+    (point_D, line_AC, split=0.5)
+    (point_E, line_BC, split=0.5)
+    (line_CD, 15, =)
+    (line_CE, 15, =)
+
+question:
+    line_BD
+    

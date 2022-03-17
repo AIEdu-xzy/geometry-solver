@@ -1,0 +1,20 @@
+topology:
+    link(D, E)
+    link(E, F)
+    link(D, F)
+    link(D, A, B)
+    link(E, B, C)
+    link(F, C, A)
+
+preconditions:
+    (line_AB, 1, =)
+    (line_EB, 1, =)
+    (line_CF, 1, =)
+    (ABC, Equilateral_Triangle, is)
+    ([E, B, F], D, common_vertex)
+    ([D, C, F], E, common_vertex)
+    ([D, A, E], F, common_vertex)
+
+question:
+    line_EF
+    

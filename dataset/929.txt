@@ -1,0 +1,12 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(B, C, D)
+
+preconditions:
+    (angle_ABC, 40, =)
+    (angle_ACD, 120, =)
+
+question:
+    angle_BAC
+    

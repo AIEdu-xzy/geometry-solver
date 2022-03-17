@@ -1,0 +1,21 @@
+topology:
+    link(A, B)
+    link(A, C)
+    link(A, D, O, E)
+    link(B, C)
+    link(B, D)
+    link(C, D)
+    link(B, E)
+    link(C, E)
+
+preconditions:
+    (angle_ACB, 90, =)
+    (angle_ADC, 150, =)
+    (angle_CBD, 15, =)
+    (line_CE, line_CA, =)
+    (line_AD, 3, =)
+    (line_CD, 1, =)
+
+question:
+    line_AC
+    
